@@ -1,4 +1,6 @@
-package A_Classes_Objetos;
+package A_Classes_Objetos.IMC;
+
+import A_Classes_Objetos.IMC.Pessoa;
 
 import javax.swing.*;
 

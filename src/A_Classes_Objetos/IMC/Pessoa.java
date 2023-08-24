@@ -1,4 +1,4 @@
-package A_Classes_Objetos;
+package A_Classes_Objetos.IMC;
 
 import javax.swing.*;
 
@@ -7,6 +7,15 @@ public class Pessoa {
     String nome;
     double peso, altura;
     char sexo;
+
+    double calculaSalario(double horas, double vlHora){
+        double salario = horas * vlHora;
+        return salario;
+    }
+    double calculaSalario(double horas){
+        double salario = horas * 50;
+        return salario;
+    }
 
     void cadastra() {
         nome = JOptionPane.showInputDialog("Informe o nome");
