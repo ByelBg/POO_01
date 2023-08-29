@@ -30,10 +30,11 @@ public class PrincipalCarro {
                 int anoInic = Integer.parseInt(JOptionPane.showInputDialog("Insira o ano inicial"));
                 int anoFim = Integer.parseInt(JOptionPane.showInputDialog("Insira o dano final"));
                 String result = "Lista de carros do ano "+anoInic+" até o ano "+anoFim+"\n\n";
-                for(Carro c : carros){
-                    if(c.anoFabric>=anoInic && c.anoFabric<=anoFim){
+                for(Carro c : carros) {
+                    if (c.anoFabric >= anoInic && c.anoFabric <= anoFim) {
                         result += c.exibirDados();
                     }
+                }
             }
             if(op == 3){
                 String marcaSolic = JOptionPane.showInputDialog("Insira a marca que você quer listar").toUpperCase();
