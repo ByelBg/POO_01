@@ -7,10 +7,10 @@ public class Jogador {
     private int camisa;
     private int gols;
 
+    // Gets e sets
     public String getNome() {
         return nome.toUpperCase();
     }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -30,6 +30,8 @@ public class Jogador {
     public void setGols(int gols) {
         this.gols = gols;
     }
+
+    // Cadastro
 
     boolean cadastroJogador(){
         setNome(JOptionPane.showInputDialog("Nome:"));
@@ -51,6 +53,7 @@ public class Jogador {
         }
         return true;
     }
+    // Listar Jogador
     String exibirJogador(){
         return "\nNome: "+nome+"\n   Camisa: "+camisa+"\n   Gols marcados: "+gols+"\n";
     }
