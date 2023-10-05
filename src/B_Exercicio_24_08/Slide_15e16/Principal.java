@@ -11,9 +11,11 @@ public class Principal {
                 "\n3- Sair";
         do{op = Integer.parseInt(JOptionPane.showInputDialog(menu));
             if(op == 1){
+                // Contratar funcionário
                 Funcionario f = new Funcionario();
                 f.contratar();
             }else if(op == 2){
+                // Listar quantidade
                 Funcionario f = new Funcionario();
                 JOptionPane.showMessageDialog(null,"Total de funcionários cadastrados: "+f.getTotalFuncionarios());
             }
